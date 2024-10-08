@@ -1,4 +1,14 @@
-package PACKAGE_NAME;
+public abstract class Circuit {
+    public abstract double getResistance();
+    public abstract double getPotentialDiff();
+    public abstract void applyPotentialDiff(double V);
 
-public class Circuit {
+    public double getPower() {
+        double V = getPotentialDiff();
+        return V * V / getResistance();
+    }
+
+    public double getCurrent() {
+        return getPotentialDiff() / getResistance();
+    }
 }
