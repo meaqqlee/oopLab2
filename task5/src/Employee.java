@@ -8,6 +8,6 @@ public class Employee extends Person{
 
     @Override
     public String toString() {
-        return super.toString() + "\nSalary: " + salary;
+        return super.toString() + ", Salary: " + salary;
     }
 }

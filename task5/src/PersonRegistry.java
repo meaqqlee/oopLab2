@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class PersonRegisty {
+public class PersonRegistry {
     private List<Person> people = new ArrayList<Person>();
 
     public void addPerson(Person person) {
