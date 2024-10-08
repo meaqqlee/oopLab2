@@ -14,4 +14,9 @@ public class PhDStudent extends Person{
             System.out.println("bro he is not a responsble enough");
         }
     }
+
+    @Override
+    public String toString() {
+        return "PhDStudent [specialty=" + specialty + "]";
+    }
 }

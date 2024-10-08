@@ -5,4 +5,9 @@ public class Employee extends Person{
         super(name, age);
         this.salary = salary;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nSalary: " + salary;
+    }
 }

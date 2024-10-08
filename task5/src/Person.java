@@ -1,4 +1,5 @@
 import javax.lang.model.type.NullType;
+import java.util.Objects;
 
 public class Person {
     private final String name;
@@ -25,6 +26,17 @@ public class Person {
     public void getOccupation(Person occupator) {
         occupator.assignPet(this.animal);
         this.removePet();
+    }
+
+    public void retrieveFromSomeone(Person occupator) {
+        if(!this.hasPet() && occupator.hasPet()) {
+            this.assignPet(occupator.animal);
+            occupator.removePet();
+        }
+    }
+
+    public int hashCode() {
+        return Objects.hash(name, age);
     }
     
     public String toString() {

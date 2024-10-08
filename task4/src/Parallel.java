@@ -1,4 +1,4 @@
-public class Parallel {
+public class Parallel extends Circuit {
     private Circuit a;
     private Circuit b;
 

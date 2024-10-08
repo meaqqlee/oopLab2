@@ -5,4 +5,9 @@ public class Dog extends Animal {
         super(name, age);
         this.breed = breed;
     }
+
+    @Override
+    public void getSound() {
+        System.out.println("AW AW AW AW AWWWWW");
+    }
 }
